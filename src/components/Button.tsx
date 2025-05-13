@@ -5,5 +5,5 @@ type ButtonProps = {
 } & PropsWithChildren;
 
 export default function Button({ onClick, children }: ButtonProps) {
-  return <button onClick={() => onClick()}>{children}</button>;
+  return <button className="cursor-pointer" onClick={() => onClick()}>{children}</button>;
 }
