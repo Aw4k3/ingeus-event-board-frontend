@@ -28,6 +28,7 @@ export default function EventCard({ jobEvent, deleteHandler, editHandler }: Even
                 onClick={() => {
                   setPreviousState(event);
                   setEditing(false);
+                  editHandler(event);
                 }}
               >
                 <Icons.Save />
